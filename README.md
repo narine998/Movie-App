@@ -11,6 +11,10 @@
 - Firebase Setup
 - Deploying our app to production
 - Create signup user account
+- Implement Sign In user Api
+- Created Redux Store with User Slice
+- Implemented Sign Out
+- Update Profile
 
 # Features
 
