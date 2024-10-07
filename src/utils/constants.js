@@ -20,3 +20,18 @@ export const PLAYING_MOVIES_URL =
 export const POPULAR_MOVIES_URL =
   "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
 export const TMDB_IMG_PATH = "https://image.tmdb.org/t/p/w500/";
+
+export const SUPPORTED_LANGUAGES = [
+  {
+    identifer: "en",
+    name: "English",
+  },
+  {
+    identifer: "arm",
+    name: "Armenian",
+  },
+  {
+    identifer: "spanish",
+    name: "Spanish",
+  },
+];

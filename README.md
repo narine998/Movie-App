@@ -36,6 +36,9 @@
 - FTMDB Image CDN URL
 - Made the browse page amazing with Tailwind css
 - usePopularMovies Custom Hook
+- GPT Search Page
+- GPT Search Bar
+- (FEATURE) Multi-language feature in our app
 
 # Features
 
