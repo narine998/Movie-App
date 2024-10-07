@@ -65,20 +65,16 @@ const Login = () => {
         auth,
         email.current.value,
         password.current.value
-      )
-        .then((userCredential) => {
-          const user = userCredential.user;
-        })
-        .catch((error) => {
-          setErrorMessage("Not a valid user");
-        });
+      ).catch((error) => {
+        setErrorMessage("Not a valid user");
+      });
     }
   };
   return (
     <div>
       <Header />
       <div className="absolute">
-        <img src={BG_IMAGE} />
+        <img src={BG_IMAGE} alt="background image" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

@@ -6,13 +6,12 @@ import { useEffect } from "react";
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch();
 
-  const getNowPlayingMovies = async () => {
-    const data = await fetch(PLAYING_MOVIES_URL, API_OPTIONS);
-    const json = await data.json();
-    dispatch(addNowPlayingMovies(json.results));
-  };
-
   useEffect(() => {
+    const getNowPlayingMovies = async () => {
+      const data = await fetch(PLAYING_MOVIES_URL, API_OPTIONS);
+      const json = await data.json();
+      dispatch(addNowPlayingMovies(json.results));
+    };
     getNowPlayingMovies();
   }, []);
 };
